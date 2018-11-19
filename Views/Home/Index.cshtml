@@ -1,94 +1,213 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+ViewData["Title"] = "Home Page";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
-    </div>
+<div class="resume">
+    <p class="resume__title">Маликов Дмитрий Александрович</p>
+    <p>Мужчина, 33&nbsp;года, родился <text>26</text>
+        <text>июля</text>
+        <text>1985</text>
+    </p>
+    <br>
+    <p>+7&nbsp;(905)&nbsp;570-01-51</p>
+    <p>malikov-dm@yandex.ru<span class="info"> — предпочитаемый способ связи</span>
+    </p>
+    <p>Skype: malikov-dm</p>
+    <br>
+    <p>Проживает: Уфа</p>
+    <p>Гражданство: Россия, есть разрешение на работу: Россия</p>
+    <p>Не готов к переезду, готов к редким командировкам</p>
+    <p class="resume__block">Желаемая должность и зарплата</p>
+    <p class="resume__position">Архитектор SharePoint, Ведущий разработчик SharePoint, Ведущий разработчик .NET</p>
+    <p>
+        <span class="resume__salary">180&nbsp;000</span> руб.</p>
+    <p>Информационные технологии, интернет, телеком</p>
+    <ul>
+        <li class="resume-specialization">Программирование, Разработка</li>
+        <li class="resume-specialization">Системный администратор</li>
+        <li class="resume-specialization">Web инженер</li>
+    </ul>
+    <br>
+    <p />
+    <p>Занятость: проектная работа, частичная занятость, полная занятость</p>
+    <p>График работы: удаленная работа</p>
+    <p />
+    <p>Желательное время в пути до работы: не имеет значения</p>
+    <p class="resume__block">Опыт работы — 11 лет</p>
+    <ul>
+        <li class="resume-experience">
+            <span class="resume-experience__company">СИБИНТЕК-СОФТ</span>
+            <p class="info">Москва, sibintek.ru/</p>
+            <p class="bloko-form-hint">Сентябрь 2017 — Август 2018 1 год</p>
+            <p class="resume-experience__position">Ведущий разработчик</p>
+            <p>
+                <description>Разработка системы документооборота.<br>Консультации по разработке различных подсистем.<br>Проектирование
+                    архитектурных решений по системам документооборота и СХД.</description>
+            </p>
+        </li>
+        <li class="resume-experience">
+            <span class="resume-experience__company">ООО "Юнитера"</span>
+            <p class="info">Россия, unitera.ru</p>
+            <p class="bloko-form-hint">Апрель 2015 — Август 2017 2 года 5 месяцев</p>
+            <p class="resume-experience__position">Старший консультант SharePoint</p>
+            <p>
+                <description>В компании выполнял функции руководителя направления SharePoint. В обязанности входили:<br>1)
+                    Составление ТЗ по бизнес-требованиям заказчика<br>2) Оценка трудоемкости разработки по ТЗ<br>3)
+                    Подбор консультантов и разработчиков для реализации ТЗ<br>4) Контроль процесса реализации<br>
+                    <br>В период работы также участвовал в реализации портала на SP для крупного гос. банка в качестве
+                    разработчика. В обязанности входили:<br>1) Разработка ключевых компонентов портала<br>2) Интеграция
+                    в решение кода компонентов, реализованных субподрядчиками<br>3) Рефакторинг кода субподрядчиков<br>
+                    <br>В решении широко использовались возможности MS SQL Server (получил опыт реализации сложной БД)
+                    в области хранения и обработки данных и ETL.</description>
+            </p>
+        </li>
+        <li class="resume-experience">
+            <span class="resume-experience__company">Процессинговая компания "Лайф", ООО</span>
+            <p class="info">Москва, sbis.ru/contragents/7743775191/774301001#msid=s1425322049555</p>
+            <p class="bloko-form-hint">Декабрь 2014 — Апрель 2015 5 месяцев</p>
+            <p class="resume-experience__position">Руководитель группы разработки портальных решений</p>
+            <p>
+                <description>ФГ Лайф выделила свои IT подразделения в отдельную структуру. Должность, сфера
+                    деятельности и функции остались те же, что на предыдущем месте работы.</description>
+            </p>
+        </li>
+        <li class="resume-experience">
+            <span class="resume-experience__company">Пробизнесбанк, ОАО АКБ</span>
+            <p class="info">Москва, www.banklife.ru</p>
+            <p class="bloko-form-hint">Июль 2012 — Ноябрь 2014 2 года 5 месяцев</p>
+            <p class="resume-experience__position">Руководитель группы разработки портальных решений</p>
+            <p>
+                <description>Разрабатывал отдельные подсистемы по бизнес-требованиям для портала, координировал
+                    действия еще двух разработчиков, взаимодействовал с подрядчиками, работавшими над разработками для
+                    портала. После отказа от сотрудничества с подрядчиками, доводил их разработки до полной
+                    функциональности, устранял ошибки, возникавшие в ходе эксплуатации.</description>
+            </p>
+        </li>
+        <li class="resume-experience">
+            <span class="resume-experience__company">Крок инкорпорейтед</span>
+            <p class="info">Москва, www.croc.ru</p>
+            <p class="bloko-form-hint">Август 2010 — Июль 2012 2 года</p>
+            <p class="resume-experience__position">Ведущий инженер-программист</p>
+            <p>
+                <description>Начинал стажером в отделе портальных решений, закончил ведущим инженером, что позволило
+                    брать на себя ответственность при разработке и внедрении порталов, принимая решения по архитектуре
+                    приложений и инфраструктуры.</description>
+            </p>
+        </li>
+        <li class="resume-experience">
+            <span class="resume-experience__company">POWERNET</span>
+            <p class="info">Крок</p>
+            <p class="bloko-form-hint">Сентябрь 2006 — Июль 2009 2 года 11 месяцев</p>
+            <p class="resume-experience__position">Системный администратор</p>
+            <p>
+                <description>Поддержание своего сегмент сети в работоспособном состоянии, оказание помощи пользователям
+                    сети в настройке оборудования и ПО, any key.</description>
+            </p>
+        </li>
+    </ul>
+    <p class="resume__block">Образование</p>
+    <ul>
+        <li>Высшее</li>
+        <li class="resume-education">
+            <span class="resume-education__name">Московский государственный технический университет им. Н.Э. Баумана,
+                Москва</span>
+            <p class="bloko-form-hint">2009</p>
+        </li>
+        <p>Энергомашиностроение, инженер</p>
+    </ul>
+    <p class="resume__block">Электронные сертификаты</p>
+    <ul>
+        <li class="resume-certificates">
+            <span class="info">2012</span>
+            <ul>
+                <li class="resume-certificates__certificate">
+                    <p class="resume-certificates__certificate-item">MCP: Microsoft Certified Professional</p>
+                </li>
+            </ul>
+        </li>
+        <li class="resume-certificates">
+            <span class="info">2011</span>
+            <ul>
+                <li class="resume-certificates__certificate">
+                    <p class="resume-certificates__certificate-item">MCITP: SharePoint Administrator 2010</p>
+                    <p class="resume-certificates__certificate-item">MCTS: SharePoint 2010, Application Development</p>
+                    <p class="resume-certificates__certificate-item">MCPD: SharePoint Developer 2010</p>
+                </li>
+            </ul>
+        </li>
+        <li class="resume-certificates">
+            <span class="info">2010</span>
+            <ul>
+                <li class="resume-certificates__certificate">
+                    <p class="resume-certificates__certificate-item">MCTS: SQL Server 2008, Implementation and
+                        Maintenance</p>
+                    <p class="resume-certificates__certificate-item">MCTS: SharePoint 2010, Configuration(*Charter)</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p class="resume__block">Ключевые навыки</p>
+    <ul>
+        <li class="resume-skils">
+            <span class="bloko-form-hint">Знание языков</span>
+            <ul class="resume-skils__item">
+                <li>Русский<span class="info"> — родной</span>
+                </li>
+                <li>Английский<span class="info"> — читаю профессиональную литературу</span>
+                </li>
+            </ul>
+        </li>
+        <li class="resume-skils">
+            <span class="bloko-form-hint">Навыки</span>
+            <p class="resume-skils__item">
+                <span>MS SharePoint; </span>
+                <span>C#; </span>
+                <span>MS Visual Studio; </span>
+                <span>MS SQL Server; </span>
+                <span>TFS; </span>
+                <span>Web Application Development; </span>
+                <span>Проектный менеджмент; </span>
+                <span>Веб-программирование; </span>
+                <span>SharePoint; </span>
+                <span>MS Project; </span>
+                <span>Системная интеграция; </span>
+                <span>Интеграция; </span>
+                <span>Архитектура; </span>
+                <span>SQL; </span>
+                <span>Git; </span>
+                <span>MS SQL; </span>
+                <span>Разработка ПО; </span>
+                <span>Transact-SQL; </span>
+                <span>Системный анализ; </span>
+                <span>Базы данных; </span>
+                <span>.NET Core</span>
+            </p>
+        </li>
+    </ul>
+    <p class="resume__block">Дополнительная информация</p>
+    <ul>
+        <li class="resume-additional">
+            <span class="bloko-form-hint">Рекомендации</span>
+            <ul class="resume-additional__item">
+                <li class="resume-recomendation">Процессинговая компания "Лайф"<p class="info">Кравченко Денис
+                        (Руководитель департамента)</p>
+                </li>
+                <li class="resume-recomendation">Сбертех<p class="info">Ибрагимов Рустам (Архитектор)</p>
+                </li>
+                <li class="resume-recomendation">СИБИНТЕК-СОФТ<p class="info">Кисляков Павел (Начальник отдела)</p>
+                </li>
+            </ul>
+        </li>
+        <li class="resume-skils">
+            <span class="bloko-form-hint">Обо мне</span>
+            <p class="resume-skils__item">
+                <string>Хобби - путешествия и экстремальные виды спорта (с осторожностью).<br>Из обычных личных качеств
+                    можно выделить настойчивость (без нее трудно решать проблемы при разработке) и усидчивость.<br>В
+                    данный момент ищу возможность удаленной работы, чтобы попробовать свои силы в распределенной
+                    команде.</string>
+            </p>
+        </li>
+    </ul>
+    <p />
 </div>
