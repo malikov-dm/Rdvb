@@ -1,0 +1,60 @@
+﻿@page
+@model RdvbDotNetCoreRazor.Pages.Articles.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Article</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Article.Id" />
+            <div class="form-group">
+                <label asp-for="Article.Title" class="control-label"></label>
+                <input asp-for="Article.Title" class="form-control" />
+                <span asp-validation-for="Article.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Article.Body" class="control-label"></label>
+                <input asp-for="Article.Body" class="form-control" />
+                <span asp-validation-for="Article.Body" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Article.CreatedAt" class="control-label"></label>
+                <input asp-for="Article.CreatedAt" class="form-control" />
+                <span asp-validation-for="Article.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Article.ModifiedAt" class="control-label"></label>
+                <input asp-for="Article.ModifiedAt" class="form-control" />
+                <span asp-validation-for="Article.ModifiedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Article.CreatedBy" class="control-label"></label>
+                <input asp-for="Article.CreatedBy" class="form-control" />
+                <span asp-validation-for="Article.CreatedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Article.ModifiedBy" class="control-label"></label>
+                <input asp-for="Article.ModifiedBy" class="form-control" />
+                <span asp-validation-for="Article.ModifiedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
