@@ -15,7 +15,8 @@ namespace RdvbDotNetCoreRazor
         public static void Main(string[] args)
         {
             var configuration = new ConfigurationBuilder()
-                .AddCommandLine(args)
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("hosting.json", optional: true, reloadOnChange: true)
                 .Build();
 
             CreateWebHostBuilder(args, configuration).Build().Run();
@@ -23,7 +24,6 @@ namespace RdvbDotNetCoreRazor
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args, IConfiguration configuration) =>
             WebHost.CreateDefaultBuilder(args)
-            //.UseConfiguration(new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("hosting.json", optional: true, reloadOnChange: true).Build())
             .UseConfiguration(configuration)
             .UseStartup<Startup>();
     }
