@@ -14,11 +14,17 @@ namespace RdvbDotNetCoreRazor
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            var configuration = new ConfigurationBuilder()
+                .AddCommandLine(args)
+                .Build();
+
+            CreateWebHostBuilder(args, configuration).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args, IConfiguration configuration) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+            //.UseConfiguration(new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("hosting.json", optional: true, reloadOnChange: true).Build())
+            .UseConfiguration(configuration)
+            .UseStartup<Startup>();
     }
 }
